@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E433A5D225B5F8E800BC57E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A5D125B5F8E800BC57E1 /* AppDelegate.swift */; };
+		E433A5D425B5F8E800BC57E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A5D325B5F8E800BC57E1 /* SceneDelegate.swift */; };
+		E433A5D625B5F8E800BC57E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A5D525B5F8E800BC57E1 /* ViewController.swift */; };
+		E433A5D925B5F8E800BC57E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E433A5D725B5F8E800BC57E1 /* Main.storyboard */; };
+		E433A5DB25B5F8EA00BC57E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E433A5DA25B5F8EA00BC57E1 /* Assets.xcassets */; };
+		E433A5DE25B5F8EA00BC57E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E433A5DC25B5F8EA00BC57E1 /* LaunchScreen.storyboard */; };
+		E433A5E925B5F8EA00BC57E1 /* WikiSearch11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A5E825B5F8EA00BC57E1 /* WikiSearch11Tests.swift */; };
+		E433A5F425B5F8EA00BC57E1 /* WikiSearch11UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A5F325B5F8EA00BC57E1 /* WikiSearch11UITests.swift */; };
+		E433A60325B5FA9400BC57E1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A60225B5FA9400BC57E1 /* ImageDownloader.swift */; };
+		E433A60525B5FAA800BC57E1 /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A60425B5FAA800BC57E1 /* Caching.swift */; };
+		E433A60825B5FACF00BC57E1 /* WikiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A60725B5FACF00BC57E1 /* WikiConstants.swift */; };
+		E433A60B25B5FAF800BC57E1 /* WikiSearch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A60A25B5FAF800BC57E1 /* WikiSearch+Extensions.swift */; };
+		E433A60E25B5FBEE00BC57E1 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A60D25B5FBEE00BC57E1 /* URLManager.swift */; };
+		E433A61125B5FC7900BC57E1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A61025B5FC7900BC57E1 /* NetworkManager.swift */; };
+		E433A61925B5FE8E00BC57E1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A61825B5FE8E00BC57E1 /* SearchViewController.swift */; };
+		E433A61B25B5FEEB00BC57E1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A61A25B5FEEB00BC57E1 /* SearchViewModel.swift */; };
+		E433A62125B602A500BC57E1 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A62025B602A500BC57E1 /* SearchListViewModel.swift */; };
+		E433A62425B6031400BC57E1 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A62325B6031400BC57E1 /* SearchResponse.swift */; };
+		E433A62725B6044200BC57E1 /* SearchAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A62625B6044200BC57E1 /* SearchAPIWorker.swift */; };
+		E433A62925B6047000BC57E1 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A62825B6047000BC57E1 /* SearchResultsTableViewController.swift */; };
+		E433A62D25B6051D00BC57E1 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A62C25B6051D00BC57E1 /* SearchResultsTableViewCell.swift */; };
+		E433A63525B6078900BC57E1 /* SearchViewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A63425B6078900BC57E1 /* SearchViewResponse.swift */; };
+		E433A63725B607B100BC57E1 /* SearchViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A63625B607B100BC57E1 /* SearchViewViewController.swift */; };
+		E433A63925B607CF00BC57E1 /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A63825B607CF00BC57E1 /* SearchViewViewModel.swift */; };
+		E433A63B25B607E500BC57E1 /* SearchViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A63A25B607E500BC57E1 /* SearchViewWorker.swift */; };
+		E433A63E25B6080B00BC57E1 /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E433A63D25B6080B00BC57E1 /* SearchView.storyboard */; };
+		E433A64025B6089F00BC57E1 /* SearchList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E433A63F25B6089F00BC57E1 /* SearchList.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E433A5E525B5F8EA00BC57E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E433A5C625B5F8E800BC57E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E433A5CD25B5F8E800BC57E1;
+			remoteInfo = WikiSearch11;
+		};
+		E433A5F025B5F8EA00BC57E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E433A5C625B5F8E800BC57E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E433A5CD25B5F8E800BC57E1;
+			remoteInfo = WikiSearch11;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E433A5CE25B5F8E800BC57E1 /* WikiSearch11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiSearch11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E433A5D125B5F8E800BC57E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E433A5D325B5F8E800BC57E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E433A5D525B5F8E800BC57E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E433A5D825B5F8E800BC57E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E433A5DA25B5F8EA00BC57E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E433A5DD25B5F8EA00BC57E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E433A5DF25B5F8EA00BC57E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E433A5E425B5F8EA00BC57E1 /* WikiSearch11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiSearch11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E433A5E825B5F8EA00BC57E1 /* WikiSearch11Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearch11Tests.swift; sourceTree = "<group>"; };
+		E433A5EA25B5F8EA00BC57E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E433A5EF25B5F8EA00BC57E1 /* WikiSearch11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiSearch11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E433A5F325B5F8EA00BC57E1 /* WikiSearch11UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearch11UITests.swift; sourceTree = "<group>"; };
+		E433A5F525B5F8EA00BC57E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E433A60225B5FA9400BC57E1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		E433A60425B5FAA800BC57E1 /* Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
+		E433A60725B5FACF00BC57E1 /* WikiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiConstants.swift; sourceTree = "<group>"; };
+		E433A60A25B5FAF800BC57E1 /* WikiSearch+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WikiSearch+Extensions.swift"; sourceTree = "<group>"; };
+		E433A60D25B5FBEE00BC57E1 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		E433A61025B5FC7900BC57E1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E433A61825B5FE8E00BC57E1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E433A61A25B5FEEB00BC57E1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E433A62025B602A500BC57E1 /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
+		E433A62325B6031400BC57E1 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		E433A62625B6044200BC57E1 /* SearchAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPIWorker.swift; sourceTree = "<group>"; };
+		E433A62825B6047000BC57E1 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		E433A62C25B6051D00BC57E1 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		E433A63425B6078900BC57E1 /* SearchViewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewResponse.swift; sourceTree = "<group>"; };
+		E433A63625B607B100BC57E1 /* SearchViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewViewController.swift; sourceTree = "<group>"; };
+		E433A63825B607CF00BC57E1 /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewViewModel.swift; sourceTree = "<group>"; };
+		E433A63A25B607E500BC57E1 /* SearchViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewWorker.swift; sourceTree = "<group>"; };
+		E433A63D25B6080B00BC57E1 /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		E433A63F25B6089F00BC57E1 /* SearchList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchList.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E433A5CB25B5F8E800BC57E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5E125B5F8EA00BC57E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5EC25B5F8EA00BC57E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E433A5C525B5F8E800BC57E1 = {
+			isa = PBXGroup;
+			children = (
+				E433A5D025B5F8E800BC57E1 /* WikiSearch11 */,
+				E433A5E725B5F8EA00BC57E1 /* WikiSearch11Tests */,
+				E433A5F225B5F8EA00BC57E1 /* WikiSearch11UITests */,
+				E433A5CF25B5F8E800BC57E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E433A5CF25B5F8E800BC57E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E433A5CE25B5F8E800BC57E1 /* WikiSearch11.app */,
+				E433A5E425B5F8EA00BC57E1 /* WikiSearch11Tests.xctest */,
+				E433A5EF25B5F8EA00BC57E1 /* WikiSearch11UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E433A5D025B5F8E800BC57E1 /* WikiSearch11 */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61225B5FD3A00BC57E1 /* Components */,
+				E433A60125B5FA5100BC57E1 /* Common Managers */,
+				E433A5D125B5F8E800BC57E1 /* AppDelegate.swift */,
+				E433A5D325B5F8E800BC57E1 /* SceneDelegate.swift */,
+				E433A5D525B5F8E800BC57E1 /* ViewController.swift */,
+				E433A5DA25B5F8EA00BC57E1 /* Assets.xcassets */,
+				E433A5DC25B5F8EA00BC57E1 /* LaunchScreen.storyboard */,
+				E433A5DF25B5F8EA00BC57E1 /* Info.plist */,
+			);
+			path = WikiSearch11;
+			sourceTree = "<group>";
+		};
+		E433A5E725B5F8EA00BC57E1 /* WikiSearch11Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E433A5E825B5F8EA00BC57E1 /* WikiSearch11Tests.swift */,
+				E433A5EA25B5F8EA00BC57E1 /* Info.plist */,
+			);
+			path = WikiSearch11Tests;
+			sourceTree = "<group>";
+		};
+		E433A5F225B5F8EA00BC57E1 /* WikiSearch11UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E433A5F325B5F8EA00BC57E1 /* WikiSearch11UITests.swift */,
+				E433A5F525B5F8EA00BC57E1 /* Info.plist */,
+			);
+			path = WikiSearch11UITests;
+			sourceTree = "<group>";
+		};
+		E433A60125B5FA5100BC57E1 /* Common Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E433A60F25B5FBF500BC57E1 /* Network */,
+				E433A60C25B5FBDF00BC57E1 /* URLs */,
+				E433A60925B5FAE300BC57E1 /* Extensions */,
+				E433A60625B5FABE00BC57E1 /* Constants */,
+				E433A60225B5FA9400BC57E1 /* ImageDownloader.swift */,
+				E433A60425B5FAA800BC57E1 /* Caching.swift */,
+			);
+			path = "Common Managers";
+			sourceTree = "<group>";
+		};
+		E433A60625B5FABE00BC57E1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E433A60725B5FACF00BC57E1 /* WikiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E433A60925B5FAE300BC57E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E433A60A25B5FAF800BC57E1 /* WikiSearch+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E433A60C25B5FBDF00BC57E1 /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+				E433A60D25B5FBEE00BC57E1 /* URLManager.swift */,
+			);
+			path = URLs;
+			sourceTree = "<group>";
+		};
+		E433A60F25B5FBF500BC57E1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61025B5FC7900BC57E1 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E433A61225B5FD3A00BC57E1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62E25B6074200BC57E1 /* SearchViewPage */,
+				E433A61C25B5FEF600BC57E1 /* SearchListPage */,
+				E433A61325B5FD4200BC57E1 /* HomePage */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E433A61325B5FD4200BC57E1 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61625B5FE4700BC57E1 /* ViewModel */,
+				E433A61525B5FE4000BC57E1 /* ViewController */,
+				E433A61425B5FE3B00BC57E1 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		E433A61425B5FE3B00BC57E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61725B5FE5B00BC57E1 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E433A61525B5FE4000BC57E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61825B5FE8E00BC57E1 /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E433A61625B5FE4700BC57E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E433A61A25B5FEEB00BC57E1 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E433A61725B5FE5B00BC57E1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E433A5D725B5F8E800BC57E1 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		E433A61C25B5FEF600BC57E1 /* SearchListPage */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62525B6043000BC57E1 /* Worker */,
+				E433A62225B6030300BC57E1 /* View */,
+				E433A61F25B5FFC900BC57E1 /* Model */,
+				E433A61E25B5FFC200BC57E1 /* ViewController */,
+				E433A61D25B5FFBB00BC57E1 /* ViewModel */,
+			);
+			path = SearchListPage;
+			sourceTree = "<group>";
+		};
+		E433A61D25B5FFBB00BC57E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62025B602A500BC57E1 /* SearchListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E433A61E25B5FFC200BC57E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62825B6047000BC57E1 /* SearchResultsTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E433A61F25B5FFC900BC57E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62325B6031400BC57E1 /* SearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E433A62225B6030300BC57E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62B25B604F000BC57E1 /* XIB and ViewClasses */,
+				E433A62A25B604E900BC57E1 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E433A62525B6043000BC57E1 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62625B6044200BC57E1 /* SearchAPIWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		E433A62A25B604E900BC57E1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63F25B6089F00BC57E1 /* SearchList.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E433A62B25B604F000BC57E1 /* XIB and ViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E433A62C25B6051D00BC57E1 /* SearchResultsTableViewCell.swift */,
+			);
+			path = "XIB and ViewClasses";
+			sourceTree = "<group>";
+		};
+		E433A62E25B6074200BC57E1 /* SearchViewPage */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63325B6077300BC57E1 /* View */,
+				E433A63225B6076600BC57E1 /* Worker */,
+				E433A63125B6076100BC57E1 /* ViewModel */,
+				E433A63025B6075C00BC57E1 /* Model */,
+				E433A62F25B6075400BC57E1 /* ViewController */,
+			);
+			path = SearchViewPage;
+			sourceTree = "<group>";
+		};
+		E433A62F25B6075400BC57E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63625B607B100BC57E1 /* SearchViewViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E433A63025B6075C00BC57E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63425B6078900BC57E1 /* SearchViewResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E433A63125B6076100BC57E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63825B607CF00BC57E1 /* SearchViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E433A63225B6076600BC57E1 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63A25B607E500BC57E1 /* SearchViewWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		E433A63325B6077300BC57E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63C25B607F400BC57E1 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E433A63C25B607F400BC57E1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E433A63D25B6080B00BC57E1 /* SearchView.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E433A5CD25B5F8E800BC57E1 /* WikiSearch11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E433A5F825B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11" */;
+			buildPhases = (
+				E433A5CA25B5F8E800BC57E1 /* Sources */,
+				E433A5CB25B5F8E800BC57E1 /* Frameworks */,
+				E433A5CC25B5F8E800BC57E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiSearch11;
+			productName = WikiSearch11;
+			productReference = E433A5CE25B5F8E800BC57E1 /* WikiSearch11.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E433A5E325B5F8EA00BC57E1 /* WikiSearch11Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E433A5FB25B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11Tests" */;
+			buildPhases = (
+				E433A5E025B5F8EA00BC57E1 /* Sources */,
+				E433A5E125B5F8EA00BC57E1 /* Frameworks */,
+				E433A5E225B5F8EA00BC57E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E433A5E625B5F8EA00BC57E1 /* PBXTargetDependency */,
+			);
+			name = WikiSearch11Tests;
+			productName = WikiSearch11Tests;
+			productReference = E433A5E425B5F8EA00BC57E1 /* WikiSearch11Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E433A5EE25B5F8EA00BC57E1 /* WikiSearch11UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E433A5FE25B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11UITests" */;
+			buildPhases = (
+				E433A5EB25B5F8EA00BC57E1 /* Sources */,
+				E433A5EC25B5F8EA00BC57E1 /* Frameworks */,
+				E433A5ED25B5F8EA00BC57E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E433A5F125B5F8EA00BC57E1 /* PBXTargetDependency */,
+			);
+			name = WikiSearch11UITests;
+			productName = WikiSearch11UITests;
+			productReference = E433A5EF25B5F8EA00BC57E1 /* WikiSearch11UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E433A5C625B5F8E800BC57E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Priya Srivastava";
+				TargetAttributes = {
+					E433A5CD25B5F8E800BC57E1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					E433A5E325B5F8EA00BC57E1 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = E433A5CD25B5F8E800BC57E1;
+					};
+					E433A5EE25B5F8EA00BC57E1 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = E433A5CD25B5F8E800BC57E1;
+					};
+				};
+			};
+			buildConfigurationList = E433A5C925B5F8E800BC57E1 /* Build configuration list for PBXProject "WikiSearch11" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E433A5C525B5F8E800BC57E1;
+			productRefGroup = E433A5CF25B5F8E800BC57E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E433A5CD25B5F8E800BC57E1 /* WikiSearch11 */,
+				E433A5E325B5F8EA00BC57E1 /* WikiSearch11Tests */,
+				E433A5EE25B5F8EA00BC57E1 /* WikiSearch11UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E433A5CC25B5F8E800BC57E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433A64025B6089F00BC57E1 /* SearchList.storyboard in Resources */,
+				E433A5DE25B5F8EA00BC57E1 /* LaunchScreen.storyboard in Resources */,
+				E433A63E25B6080B00BC57E1 /* SearchView.storyboard in Resources */,
+				E433A5DB25B5F8EA00BC57E1 /* Assets.xcassets in Resources */,
+				E433A5D925B5F8E800BC57E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5E225B5F8EA00BC57E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5ED25B5F8EA00BC57E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E433A5CA25B5F8E800BC57E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433A63925B607CF00BC57E1 /* SearchViewViewModel.swift in Sources */,
+				E433A62425B6031400BC57E1 /* SearchResponse.swift in Sources */,
+				E433A61B25B5FEEB00BC57E1 /* SearchViewModel.swift in Sources */,
+				E433A62925B6047000BC57E1 /* SearchResultsTableViewController.swift in Sources */,
+				E433A61925B5FE8E00BC57E1 /* SearchViewController.swift in Sources */,
+				E433A62125B602A500BC57E1 /* SearchListViewModel.swift in Sources */,
+				E433A61125B5FC7900BC57E1 /* NetworkManager.swift in Sources */,
+				E433A5D625B5F8E800BC57E1 /* ViewController.swift in Sources */,
+				E433A63725B607B100BC57E1 /* SearchViewViewController.swift in Sources */,
+				E433A60E25B5FBEE00BC57E1 /* URLManager.swift in Sources */,
+				E433A5D225B5F8E800BC57E1 /* AppDelegate.swift in Sources */,
+				E433A60325B5FA9400BC57E1 /* ImageDownloader.swift in Sources */,
+				E433A63B25B607E500BC57E1 /* SearchViewWorker.swift in Sources */,
+				E433A63525B6078900BC57E1 /* SearchViewResponse.swift in Sources */,
+				E433A60B25B5FAF800BC57E1 /* WikiSearch+Extensions.swift in Sources */,
+				E433A62725B6044200BC57E1 /* SearchAPIWorker.swift in Sources */,
+				E433A62D25B6051D00BC57E1 /* SearchResultsTableViewCell.swift in Sources */,
+				E433A60825B5FACF00BC57E1 /* WikiConstants.swift in Sources */,
+				E433A60525B5FAA800BC57E1 /* Caching.swift in Sources */,
+				E433A5D425B5F8E800BC57E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5E025B5F8EA00BC57E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433A5E925B5F8EA00BC57E1 /* WikiSearch11Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E433A5EB25B5F8EA00BC57E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433A5F425B5F8EA00BC57E1 /* WikiSearch11UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E433A5E625B5F8EA00BC57E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E433A5CD25B5F8E800BC57E1 /* WikiSearch11 */;
+			targetProxy = E433A5E525B5F8EA00BC57E1 /* PBXContainerItemProxy */;
+		};
+		E433A5F125B5F8EA00BC57E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E433A5CD25B5F8E800BC57E1 /* WikiSearch11 */;
+			targetProxy = E433A5F025B5F8EA00BC57E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E433A5D725B5F8E800BC57E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E433A5D825B5F8E800BC57E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E433A5DC25B5F8EA00BC57E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E433A5DD25B5F8EA00BC57E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E433A5F625B5F8EA00BC57E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E433A5F725B5F8EA00BC57E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E433A5F925B5F8EA00BC57E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MY_API_BASE_URL_ENDPOINT = "https://en.wikipedia.org/w/";
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E433A5FA25B5F8EA00BC57E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MY_API_BASE_URL_ENDPOINT = "https://en.wikipedia.org/w/";
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E433A5FC25B5F8EA00BC57E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiSearch11.app/WikiSearch11";
+			};
+			name = Debug;
+		};
+		E433A5FD25B5F8EA00BC57E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiSearch11.app/WikiSearch11";
+			};
+			name = Release;
+		};
+		E433A5FF25B5F8EA00BC57E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiSearch11;
+			};
+			name = Debug;
+		};
+		E433A60025B5F8EA00BC57E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S266CM6Z9J;
+				INFOPLIST_FILE = WikiSearch11UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.priya.wikiSearch.WikiSearch11UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiSearch11;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E433A5C925B5F8E800BC57E1 /* Build configuration list for PBXProject "WikiSearch11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E433A5F625B5F8EA00BC57E1 /* Debug */,
+				E433A5F725B5F8EA00BC57E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E433A5F825B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E433A5F925B5F8EA00BC57E1 /* Debug */,
+				E433A5FA25B5F8EA00BC57E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E433A5FB25B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E433A5FC25B5F8EA00BC57E1 /* Debug */,
+				E433A5FD25B5F8EA00BC57E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E433A5FE25B5F8EA00BC57E1 /* Build configuration list for PBXNativeTarget "WikiSearch11UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E433A5FF25B5F8EA00BC57E1 /* Debug */,
+				E433A60025B5F8EA00BC57E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E433A5C625B5F8E800BC57E1 /* Project object */;
+}
