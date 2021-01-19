@@ -37,13 +37,13 @@
                                                     <rect key="frame" x="85" y="8" width="317" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XET-Sd-Mfu">
-                                                            <rect key="frame" x="12" y="8" width="293" height="44"/>
+                                                            <rect key="frame" x="12" y="8" width="293" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-D8-wVT">
-                                                            <rect key="frame" x="12" y="39" width="293" height="21"/>
+                                                            <rect key="frame" x="12" y="30" width="293" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                                         <constraint firstItem="XET-Sd-Mfu" firstAttribute="top" secondItem="EiJ-jk-v2L" secondAttribute="top" constant="8" id="Ans-wC-6xp"/>
                                                         <constraint firstAttribute="trailing" secondItem="cPF-D8-wVT" secondAttribute="trailing" constant="12" id="CcM-WD-0bc"/>
                                                         <constraint firstAttribute="trailing" secondItem="XET-Sd-Mfu" secondAttribute="trailing" constant="12" id="DL8-GD-qfd"/>
-                                                        <constraint firstItem="XET-Sd-Mfu" firstAttribute="bottom" secondItem="cPF-D8-wVT" secondAttribute="bottom" constant="-8" id="Fw5-Ai-F1H"/>
+                                                        <constraint firstItem="cPF-D8-wVT" firstAttribute="top" secondItem="XET-Sd-Mfu" secondAttribute="bottom" constant="1.5" id="Fw5-Ai-F1H"/>
                                                         <constraint firstItem="cPF-D8-wVT" firstAttribute="leading" secondItem="EiJ-jk-v2L" secondAttribute="leading" constant="12" id="gJI-G5-qez"/>
                                                         <constraint firstItem="XET-Sd-Mfu" firstAttribute="leading" secondItem="EiJ-jk-v2L" secondAttribute="leading" constant="12" id="mNS-pd-eau"/>
                                                         <constraint firstAttribute="bottom" secondItem="cPF-D8-wVT" secondAttribute="bottom" constant="8" id="nrL-HW-xo2"/>
